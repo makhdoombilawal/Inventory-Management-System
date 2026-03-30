@@ -1,0 +1,36 @@
+=== DATABASE VERIFICATION ===
+
+USERS TABLE
+{id=5, email=owner_b55a3e57@test.com, role_id=1, tenant_id=1, active=true, password=8Pg0u1CBeytUGfS/Ow3zxhbQioNQuowjl31WUAkI2hjMM7pJcZ6THoQxZrcGDVMaNPQUT5xPXLu8RcJUdS/Vo9zlKhGi0xKHLSpBCw==}
+{id=7, email=owner_bcb90053@test.com, role_id=4, tenant_id=2, active=true, password=IqCE8EQeXmi5tzt8qG8zouyVPrQep0RVNZd3ZMS3DUOMKbsGiBuOoYohNEyWqcL3T4YAKpuaK7oJaoqSbzWA0kBaaxDngKiNKzZOgQ==}
+{id=9, email=owner_c54ac5be@test.com, role_id=4, tenant_id=3, active=true, password=IaPY7yKKm3CJSRaDIGfLCwmpcfgo006PekrbayWSrWoqWCBch3aa8obyAgyHkCmCBmF25eR8/ORas5dCpjkYXYy7DgpsREuClhiqcQ==}
+{id=10, email=owner_c8164115@test.com, role_id=4, tenant_id=4, active=true, password=oh3/sDaOfzwYUjebaqt8sv1k3/9ibhI7hWtFeCwotrS/Q0nfjtPHeQDDXCzjJ4QjCuj6S7JYLPrI5TKc7MekSAji2YVgAKe0vhpLdQ==}
+{id=12, email=tenant_a_cbc3da99@test.com, role_id=4, tenant_id=5, active=true, password=CrRzzAWgwB+uOvv2D0TZ39xwmdvQPYv9mAesOHvDlKkvmh6Wc19OcRTHSFYTWiL8k0W0ZnGMlRihEP9EnTijW2XvNjpC3aHsjxadWA==}
+{id=13, email=tenant_b_d89e0ab9@test.com, role_id=4, tenant_id=6, active=true, password=ZaX32LwlQKvnPpf5hsqET8MoMt0MnfyoxMspC7QHPwJrYzUOGrA+0mQO75jU2XpCLVsAhl/4LBTW7lDTEOKSF1KcS5o2jyzhSkb9Zw==}
+{id=14, email=tenant_a_70e04fbb@test.com, role_id=4, tenant_id=7, active=true, password=xh3CqTMVCfKQH3M3QUr6sG/AtLyU3jtjwMxF9yiNHd5Xn4evh0r5RWPuJhOZsWqZXZhUt8udiG9l93Z0iV1VrM0+8eEZu3eSEvozYQ==}
+{id=15, email=tenant_b_bddf6ee0@test.com, role_id=4, tenant_id=8, active=true, password=CBXDzdQKwDfhgukUSRUEMpCD0iisIDKZITt3gBNkC7lXZsC4uFCCH8BwdG2zsJqdViP/BD0qTz+uYToFagvsQ8WVbjHtmF3nqRGCeg==}
+{id=17, email=user_25150@test.com, role_id=4, tenant_id=12345, active=true, password=7+zQEOMgr5ZCmO+c9zj52O55i5l0vwKfV+PetNDy+cFLu8csU5xc8X/Q2Pc7b6JS3WgpYog36mh/mSaWNhqAGdJNl34URD+iMPxEMw==}
+{id=19, email=user_534f7@test.com, role_id=4, tenant_id=12345, active=true, password=8XGlrs9BC9v8KbfsjQidkBSvL3cnGM8gi/MmEC1N0yvk8AaPqk2+o1ZMBOrY/usWNPYJrIfGrB94zaSJf5HR9sS40XLBQtOmV+yE7Q==}
+
+DEALERS TABLE
+{id=1, name=1 Organization, subscription_type=BASIC, tenant_id=1}
+{id=2, name=2 Organization, subscription_type=BASIC, tenant_id=2}
+{id=3, name=3 Organization, subscription_type=BASIC, tenant_id=3}
+{id=4, name=4 Organization, subscription_type=BASIC, tenant_id=4}
+{id=5, name=5 Organization, subscription_type=BASIC, tenant_id=5}
+{id=6, name=6 Organization, subscription_type=BASIC, tenant_id=6}
+{id=7, name=7 Organization, subscription_type=BASIC, tenant_id=7}
+{id=8, name=8 Organization, subscription_type=BASIC, tenant_id=8}
+{id=9, name=12345 Organization, subscription_type=BASIC, tenant_id=12345}
+{id=10, name=Updated QA Dealer, subscription_type=PREMIUM, tenant_id=0}
+
+{id=1, model=X5 QA, status=AVAILABLE, price=85000.00, tenant_id=2, dealer_id=2}
+{id=2, model=X5 QA, status=AVAILABLE, price=85000.00, tenant_id=3, dealer_id=3}
+{id=3, model=X5 QA, status=AVAILABLE, price=85000.00, tenant_id=4, dealer_id=4}
+{id=4, model=X5 QA, status=AVAILABLE, price=85000.00, tenant_id=5, dealer_id=5}
+{id=5, model=X5 QA, status=AVAILABLE, price=85000.00, tenant_id=7, dealer_id=7}
+{id=6, model=X6 QA, status=AVAILABLE, price=75000.00, tenant_id=0, dealer_id=10}
+{id=7, model=X6 QA, status=AVAILABLE, price=75000.00, tenant_id=0, dealer_id=11}
+{id=8, model=X5 QA, status=AVAILABLE, price=85000.00, tenant_id=9, dealer_id=13}
+{id=9, model=X5 QA, status=AVAILABLE, price=85000.00, tenant_id=11, dealer_id=16}
+{id=10, model=X5 QA, status=AVAILABLE, price=85000.00, tenant_id=13, dealer_id=18}

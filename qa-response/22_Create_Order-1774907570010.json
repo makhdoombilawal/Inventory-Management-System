@@ -1,0 +1,1 @@
+{"status":"success","message":"Order placed successfully","data":{"id":1,"orderNumber":"ORD-3B268029","dealerId":28,"status":"PENDING","totalAmount":75000.00,"orderDate":"2026-03-31T02:52:49.9665335","tenantId":0,"items":[{"id":1,"vehicleId":18,"vehicleModel":"X6 QA","quantity":1,"unitPrice":75000.00,"subTotal":75000.00}]},"timestamp":"2026-03-31T02:52:50.0066899"}

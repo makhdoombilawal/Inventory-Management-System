@@ -1,0 +1,2746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.inventoryapp.qa.EnterpriseQATest" time="19.371" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="E:\InventoryApp\Inventory Management System\target\test-classes;E:\InventoryApp\Inventory Management System\target\classes;E:\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.0\spring-boot-starter-web-3.2.0.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.0\spring-boot-starter-3.2.0.jar;E:\.m2\repository\org\springframework\boot\spring-boot\3.2.0\spring-boot-3.2.0.jar;E:\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.0\spring-boot-autoconfigure-3.2.0.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.0\spring-boot-starter-logging-3.2.0.jar;E:\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;E:\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;E:\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;E:\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;E:\.m2\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar;E:\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;E:\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.0\spring-boot-starter-json-3.2.0.jar;E:\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.3\jackson-datatype-jdk8-2.15.3.jar;E:\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.3\jackson-datatype-jsr310-2.15.3.jar;E:\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.3\jackson-module-parameter-names-2.15.3.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.0\spring-boot-starter-tomcat-3.2.0.jar;E:\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.16\tomcat-embed-core-10.1.16.jar;E:\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.16\tomcat-embed-websocket-10.1.16.jar;E:\.m2\repository\org\springframework\spring-web\6.1.1\spring-web-6.1.1.jar;E:\.m2\repository\org\springframework\spring-beans\6.1.1\spring-beans-6.1.1.jar;E:\.m2\repository\io\micrometer\micrometer-observation\1.12.0\micrometer-observation-1.12.0.jar;E:\.m2\repository\io\micrometer\micrometer-commons\1.12.0\micrometer-commons-1.12.0.jar;E:\.m2\repository\org\springframework\spring-webmvc\6.1.1\spring-webmvc-6.1.1.jar;E:\.m2\repository\org\springframework\spring-context\6.1.1\spring-context-6.1.1.jar;E:\.m2\repository\org\springframework\spring-expression\6.1.1\spring-expression-6.1.1.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.0\spring-boot-starter-data-jpa-3.2.0.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.0\spring-boot-starter-aop-3.2.0.jar;E:\.m2\repository\org\aspectj\aspectjweaver\1.9.20.1\aspectjweaver-1.9.20.1.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.0\spring-boot-starter-jdbc-3.2.0.jar;E:\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;E:\.m2\repository\org\springframework\spring-jdbc\6.1.1\spring-jdbc-6.1.1.jar;E:\.m2\repository\org\hibernate\orm\hibernate-core\6.3.1.Final\hibernate-core-6.3.1.Final.jar;E:\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;E:\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;E:\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;E:\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;E:\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;E:\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;E:\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;E:\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;E:\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;E:\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;E:\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;E:\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;E:\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;E:\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;E:\.m2\repository\org\springframework\data\spring-data-jpa\3.2.0\spring-data-jpa-3.2.0.jar;E:\.m2\repository\org\springframework\data\spring-data-commons\3.2.0\spring-data-commons-3.2.0.jar;E:\.m2\repository\org\springframework\spring-orm\6.1.1\spring-orm-6.1.1.jar;E:\.m2\repository\org\springframework\spring-tx\6.1.1\spring-tx-6.1.1.jar;E:\.m2\repository\org\springframework\spring-aspects\6.1.1\spring-aspects-6.1.1.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.2.0\spring-boot-starter-validation-3.2.0.jar;E:\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.16\tomcat-embed-el-10.1.16.jar;E:\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;E:\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.2.0\spring-boot-starter-security-3.2.0.jar;E:\.m2\repository\org\springframework\spring-aop\6.1.1\spring-aop-6.1.1.jar;E:\.m2\repository\org\springframework\security\spring-security-config\6.2.0\spring-security-config-6.2.0.jar;E:\.m2\repository\org\springframework\security\spring-security-web\6.2.0\spring-security-web-6.2.0.jar;E:\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;E:\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;E:\.m2\repository\com\mysql\mysql-connector-j\8.1.0\mysql-connector-j-8.1.0.jar;E:\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;E:\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;E:\.m2\repository\org\mapstruct\mapstruct\1.5.5.Final\mapstruct-1.5.5.Final.jar;E:\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.3.0\springdoc-openapi-starter-webmvc-ui-2.3.0.jar;E:\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.3.0\springdoc-openapi-starter-webmvc-api-2.3.0.jar;E:\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.3.0\springdoc-openapi-starter-common-2.3.0.jar;E:\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.19\swagger-core-jakarta-2.2.19.jar;E:\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;E:\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.19\swagger-annotations-jakarta-2.2.19.jar;E:\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.19\swagger-models-jakarta-2.2.19.jar;E:\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.3\jackson-dataformat-yaml-2.15.3.jar;E:\.m2\repository\org\webjars\swagger-ui\5.10.3\swagger-ui-5.10.3.jar;E:\.m2\repository\io\jsonwebtoken\jjwt-api\0.11.5\jjwt-api-0.11.5.jar;E:\.m2\repository\io\jsonwebtoken\jjwt-impl\0.11.5\jjwt-impl-0.11.5.jar;E:\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.11.5\jjwt-jackson-0.11.5.jar;E:\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;E:\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;E:\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;E:\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.77\bcprov-jdk18on-1.77.jar;E:\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-data-redis\3.2.0\spring-boot-starter-data-redis-3.2.0.jar;E:\.m2\repository\io\lettuce\lettuce-core\6.3.0.RELEASE\lettuce-core-6.3.0.RELEASE.jar;E:\.m2\repository\io\netty\netty-common\4.1.101.Final\netty-common-4.1.101.Final.jar;E:\.m2\repository\io\netty\netty-handler\4.1.101.Final\netty-handler-4.1.101.Final.jar;E:\.m2\repository\io\netty\netty-resolver\4.1.101.Final\netty-resolver-4.1.101.Final.jar;E:\.m2\repository\io\netty\netty-buffer\4.1.101.Final\netty-buffer-4.1.101.Final.jar;E:\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.101.Final\netty-transport-native-unix-common-4.1.101.Final.jar;E:\.m2\repository\io\netty\netty-codec\4.1.101.Final\netty-codec-4.1.101.Final.jar;E:\.m2\repository\io\netty\netty-transport\4.1.101.Final\netty-transport-4.1.101.Final.jar;E:\.m2\repository\io\projectreactor\reactor-core\3.6.0\reactor-core-3.6.0.jar;E:\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;E:\.m2\repository\org\springframework\data\spring-data-redis\3.2.0\spring-data-redis-3.2.0.jar;E:\.m2\repository\org\springframework\data\spring-data-keyvalue\3.2.0\spring-data-keyvalue-3.2.0.jar;E:\.m2\repository\org\springframework\spring-oxm\6.1.1\spring-oxm-6.1.1.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-cache\3.2.0\spring-boot-starter-cache-3.2.0.jar;E:\.m2\repository\org\springframework\spring-context-support\6.1.1\spring-context-support-6.1.1.jar;E:\.m2\repository\redis\clients\jedis\5.0.2\jedis-5.0.2.jar;E:\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;E:\.m2\repository\org\apache\commons\commons-pool2\2.12.0\commons-pool2-2.12.0.jar;E:\.m2\repository\org\json\json\20231013\json-20231013.jar;E:\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.0\spring-boot-starter-test-3.2.0.jar;E:\.m2\repository\org\springframework\boot\spring-boot-test\3.2.0\spring-boot-test-3.2.0.jar;E:\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.0\spring-boot-test-autoconfigure-3.2.0.jar;E:\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;E:\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;E:\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;E:\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;E:\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;E:\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;E:\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;E:\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;E:\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;E:\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;E:\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;E:\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;E:\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;E:\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;E:\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;E:\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;E:\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;E:\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;E:\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar;E:\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;E:\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;E:\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;E:\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;E:\.m2\repository\org\springframework\spring-core\6.1.1\spring-core-6.1.1.jar;E:\.m2\repository\org\springframework\spring-jcl\6.1.1\spring-jcl-6.1.1.jar;E:\.m2\repository\org\springframework\spring-test\6.1.1\spring-test-6.1.1.jar;E:\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;E:\.m2\repository\org\springframework\security\spring-security-test\6.2.0\spring-security-test-6.2.0.jar;E:\.m2\repository\org\springframework\security\spring-security-core\6.2.0\spring-security-core-6.2.0.jar;E:\.m2\repository\org\springframework\security\spring-security-crypto\6.2.0\spring-security-crypto-6.2.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="catalina.useNaming" value="false"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Karachi"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
+    <property name="sun.java.command" value="C:\Users\Bilawal Pc\AppData\Local\Temp\surefire12805405522651797475\surefirebooter-20260331025229742_3.jar C:\Users\Bilawal Pc\AppData\Local\Temp\surefire12805405522651797475 2026-03-31T02-52-29_421-jvmRun1 surefire-20260331025229742_1tmp surefire_0-20260331025229742_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="EnterpriseQATest"/>
+    <property name="surefire.test.class.path" value="E:\InventoryApp\Inventory Management System\target\test-classes;E:\InventoryApp\Inventory Management System\target\classes;E:\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.0\spring-boot-starter-web-3.2.0.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.0\spring-boot-starter-3.2.0.jar;E:\.m2\repository\org\springframework\boot\spring-boot\3.2.0\spring-boot-3.2.0.jar;E:\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.0\spring-boot-autoconfigure-3.2.0.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.0\spring-boot-starter-logging-3.2.0.jar;E:\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;E:\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;E:\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;E:\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;E:\.m2\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar;E:\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;E:\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.0\spring-boot-starter-json-3.2.0.jar;E:\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.3\jackson-datatype-jdk8-2.15.3.jar;E:\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.3\jackson-datatype-jsr310-2.15.3.jar;E:\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.3\jackson-module-parameter-names-2.15.3.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.0\spring-boot-starter-tomcat-3.2.0.jar;E:\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.16\tomcat-embed-core-10.1.16.jar;E:\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.16\tomcat-embed-websocket-10.1.16.jar;E:\.m2\repository\org\springframework\spring-web\6.1.1\spring-web-6.1.1.jar;E:\.m2\repository\org\springframework\spring-beans\6.1.1\spring-beans-6.1.1.jar;E:\.m2\repository\io\micrometer\micrometer-observation\1.12.0\micrometer-observation-1.12.0.jar;E:\.m2\repository\io\micrometer\micrometer-commons\1.12.0\micrometer-commons-1.12.0.jar;E:\.m2\repository\org\springframework\spring-webmvc\6.1.1\spring-webmvc-6.1.1.jar;E:\.m2\repository\org\springframework\spring-context\6.1.1\spring-context-6.1.1.jar;E:\.m2\repository\org\springframework\spring-expression\6.1.1\spring-expression-6.1.1.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.0\spring-boot-starter-data-jpa-3.2.0.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.0\spring-boot-starter-aop-3.2.0.jar;E:\.m2\repository\org\aspectj\aspectjweaver\1.9.20.1\aspectjweaver-1.9.20.1.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.0\spring-boot-starter-jdbc-3.2.0.jar;E:\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;E:\.m2\repository\org\springframework\spring-jdbc\6.1.1\spring-jdbc-6.1.1.jar;E:\.m2\repository\org\hibernate\orm\hibernate-core\6.3.1.Final\hibernate-core-6.3.1.Final.jar;E:\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;E:\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;E:\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;E:\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;E:\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;E:\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;E:\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;E:\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;E:\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;E:\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;E:\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;E:\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;E:\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;E:\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;E:\.m2\repository\org\springframework\data\spring-data-jpa\3.2.0\spring-data-jpa-3.2.0.jar;E:\.m2\repository\org\springframework\data\spring-data-commons\3.2.0\spring-data-commons-3.2.0.jar;E:\.m2\repository\org\springframework\spring-orm\6.1.1\spring-orm-6.1.1.jar;E:\.m2\repository\org\springframework\spring-tx\6.1.1\spring-tx-6.1.1.jar;E:\.m2\repository\org\springframework\spring-aspects\6.1.1\spring-aspects-6.1.1.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.2.0\spring-boot-starter-validation-3.2.0.jar;E:\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.16\tomcat-embed-el-10.1.16.jar;E:\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;E:\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.2.0\spring-boot-starter-security-3.2.0.jar;E:\.m2\repository\org\springframework\spring-aop\6.1.1\spring-aop-6.1.1.jar;E:\.m2\repository\org\springframework\security\spring-security-config\6.2.0\spring-security-config-6.2.0.jar;E:\.m2\repository\org\springframework\security\spring-security-web\6.2.0\spring-security-web-6.2.0.jar;E:\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;E:\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;E:\.m2\repository\com\mysql\mysql-connector-j\8.1.0\mysql-connector-j-8.1.0.jar;E:\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;E:\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;E:\.m2\repository\org\mapstruct\mapstruct\1.5.5.Final\mapstruct-1.5.5.Final.jar;E:\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.3.0\springdoc-openapi-starter-webmvc-ui-2.3.0.jar;E:\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.3.0\springdoc-openapi-starter-webmvc-api-2.3.0.jar;E:\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.3.0\springdoc-openapi-starter-common-2.3.0.jar;E:\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.19\swagger-core-jakarta-2.2.19.jar;E:\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;E:\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.19\swagger-annotations-jakarta-2.2.19.jar;E:\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.19\swagger-models-jakarta-2.2.19.jar;E:\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.3\jackson-dataformat-yaml-2.15.3.jar;E:\.m2\repository\org\webjars\swagger-ui\5.10.3\swagger-ui-5.10.3.jar;E:\.m2\repository\io\jsonwebtoken\jjwt-api\0.11.5\jjwt-api-0.11.5.jar;E:\.m2\repository\io\jsonwebtoken\jjwt-impl\0.11.5\jjwt-impl-0.11.5.jar;E:\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.11.5\jjwt-jackson-0.11.5.jar;E:\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;E:\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;E:\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;E:\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.77\bcprov-jdk18on-1.77.jar;E:\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-data-redis\3.2.0\spring-boot-starter-data-redis-3.2.0.jar;E:\.m2\repository\io\lettuce\lettuce-core\6.3.0.RELEASE\lettuce-core-6.3.0.RELEASE.jar;E:\.m2\repository\io\netty\netty-common\4.1.101.Final\netty-common-4.1.101.Final.jar;E:\.m2\repository\io\netty\netty-handler\4.1.101.Final\netty-handler-4.1.101.Final.jar;E:\.m2\repository\io\netty\netty-resolver\4.1.101.Final\netty-resolver-4.1.101.Final.jar;E:\.m2\repository\io\netty\netty-buffer\4.1.101.Final\netty-buffer-4.1.101.Final.jar;E:\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.101.Final\netty-transport-native-unix-common-4.1.101.Final.jar;E:\.m2\repository\io\netty\netty-codec\4.1.101.Final\netty-codec-4.1.101.Final.jar;E:\.m2\repository\io\netty\netty-transport\4.1.101.Final\netty-transport-4.1.101.Final.jar;E:\.m2\repository\io\projectreactor\reactor-core\3.6.0\reactor-core-3.6.0.jar;E:\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;E:\.m2\repository\org\springframework\data\spring-data-redis\3.2.0\spring-data-redis-3.2.0.jar;E:\.m2\repository\org\springframework\data\spring-data-keyvalue\3.2.0\spring-data-keyvalue-3.2.0.jar;E:\.m2\repository\org\springframework\spring-oxm\6.1.1\spring-oxm-6.1.1.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-cache\3.2.0\spring-boot-starter-cache-3.2.0.jar;E:\.m2\repository\org\springframework\spring-context-support\6.1.1\spring-context-support-6.1.1.jar;E:\.m2\repository\redis\clients\jedis\5.0.2\jedis-5.0.2.jar;E:\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;E:\.m2\repository\org\apache\commons\commons-pool2\2.12.0\commons-pool2-2.12.0.jar;E:\.m2\repository\org\json\json\20231013\json-20231013.jar;E:\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;E:\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.0\spring-boot-starter-test-3.2.0.jar;E:\.m2\repository\org\springframework\boot\spring-boot-test\3.2.0\spring-boot-test-3.2.0.jar;E:\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.0\spring-boot-test-autoconfigure-3.2.0.jar;E:\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;E:\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;E:\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;E:\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;E:\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;E:\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;E:\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;E:\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;E:\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;E:\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;E:\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;E:\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;E:\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;E:\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;E:\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;E:\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;E:\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;E:\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;E:\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar;E:\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;E:\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;E:\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;E:\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;E:\.m2\repository\org\springframework\spring-core\6.1.1\spring-core-6.1.1.jar;E:\.m2\repository\org\springframework\spring-jcl\6.1.1\spring-jcl-6.1.1.jar;E:\.m2\repository\org\springframework\spring-test\6.1.1\spring-test-6.1.1.jar;E:\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;E:\.m2\repository\org\springframework\security\spring-security-test\6.2.0\spring-security-test-6.2.0.jar;E:\.m2\repository\org\springframework\security\spring-security-core\6.2.0\spring-security-core-6.2.0.jar;E:\.m2\repository\org\springframework\security\spring-security-crypto\6.2.0\spring-security-crypto-6.2.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Bilawal Pc"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-22"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="E:\InventoryApp\Inventory Management System"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\Bilawal Pc\AppData\Local\Temp\surefire12805405522651797475\surefirebooter-20260331025229742_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="22.0.1+8-16"/>
+    <property name="user.name" value="Bilawal Pc"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="E:\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\BILAWA~1\AppData\Local\Temp\"/>
+    <property name="catalina.home" value="C:\Users\Bilawal Pc\AppData\Local\Temp\tomcat.0.16021585014776523101"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="22.0.1"/>
+    <property name="user.dir" value="E:\InventoryApp\Inventory Management System"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="12608"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="catalina.base" value="C:\Users\Bilawal Pc\AppData\Local\Temp\tomcat.0.16021585014776523101"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk-22\bin;C:\Program Files\Java\jdk-22\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Bilawal Pc\.local\bin;C:\Users\Bilawal Pc\.local\bin;C:\Users\Bilawal Pc\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Bilawal Pc\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\Java\jdk-22\bin;C:\Users\Bilawal Pc\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2025.1.3\bin;;C:\Users\Bilawal Pc\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Bilawal Pc\AppData\Local\Programs\Ollama;C:\Users\Bilawal Pc\AppData\Local\Programs\Antigravity\bin;c:\Users\Bilawal Pc\.antigravity\extensions\ms-python.debugpy-2025.18.0-win32-x64\bundled\scripts\noConfigScripts;c:\Users\Bilawal Pc\.antigravity\extensions\vscjava.vscode-java-debug-0.58.5-universal\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22.0.1+8-16"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="66.0"/>
+    <property name="CONSOLE_LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss} - %msg%n"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[inventory-management-system] "/>
+  </properties>
+  <testcase name="executeFullQA" classname="com.inventoryapp.qa.EnterpriseQATest" time="3.314">
+    <system-out><![CDATA[02:52:31.229 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.inventoryapp.qa.EnterpriseQATest]: EnterpriseQATest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+02:52:31.441 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.inventoryapp.InventoryManagementApplication for test class com.inventoryapp.qa.EnterpriseQATest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-03-31 02:52:32 - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/E:/.m2/repository/org/json/json/20231013/json-20231013.jar!/org/json/JSONObject.class
+	jar:file:/E:/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2026-03-31 02:52:32 - Starting EnterpriseQATest using Java 22.0.1 with PID 12608 (started by Bilawal Pc in E:\InventoryApp\Inventory Management System)
+2026-03-31 02:52:32 - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-31 02:52:32 - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 02:52:34 - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 02:52:34 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-31 02:52:34 - Finished Spring Data repository scanning in 301 ms. Found 8 JPA repository interfaces.
+2026-03-31 02:52:35 - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 02:52:35 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 02:52:35 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.inventoryapp.auth.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-31 02:52:35 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.inventoryapp.auth.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-31 02:52:35 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.inventoryapp.common.tenant.repository.TenantRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-31 02:52:35 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.inventoryapp.dealer.repository.DealerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-31 02:52:35 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.inventoryapp.inventory.repository.InventoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-31 02:52:35 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.inventoryapp.order.repository.OrderItemRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-31 02:52:35 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.inventoryapp.order.repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-31 02:52:35 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.inventoryapp.vehicle.repository.VehicleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-31 02:52:35 - Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
+2026-03-31 02:52:36 - Tomcat initialized with port 0 (http)
+2026-03-31 02:52:36 - Starting service [Tomcat]
+2026-03-31 02:52:36 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-31 02:52:36 - Initializing Spring embedded WebApplicationContext
+2026-03-31 02:52:36 - Root WebApplicationContext: initialization completed in 3690 ms
+2026-03-31 02:52:37 - Filter 'jwtAuthenticationFilter' configured for use
+2026-03-31 02:52:37 - Filter 'rateLimiterFilter' configured for use
+2026-03-31 02:52:37 - Filter 'tenantFilter' configured for use
+2026-03-31 02:52:37 - HikariPool-1 - Starting...
+2026-03-31 02:52:37 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b5f960a
+2026-03-31 02:52:37 - HikariPool-1 - Start completed.
+2026-03-31 02:52:38 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-31 02:52:38 - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-03-31 02:52:38 - HHH000026: Second-level cache disabled
+2026-03-31 02:52:38 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-31 02:52:39 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-31 02:52:41 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-31 02:52:41 - 
+    create table order_items (
+        id bigint not null auto_increment,
+        created_at datetime(6) not null,
+        tenant_id bigint,
+        updated_at datetime(6) not null,
+        quantity integer not null,
+        sub_total decimal(38,2) not null,
+        unit_price decimal(38,2) not null,
+        order_id bigint not null,
+        vehicle_id bigint not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create table order_items (
+        id bigint not null auto_increment,
+        created_at datetime(6) not null,
+        tenant_id bigint,
+        updated_at datetime(6) not null,
+        quantity integer not null,
+        sub_total decimal(38,2) not null,
+        unit_price decimal(38,2) not null,
+        order_id bigint not null,
+        vehicle_id bigint not null,
+        primary key (id)
+    ) engine=InnoDB
+2026-03-31 02:52:41 - 
+    create table vehicle_orders (
+        id bigint not null auto_increment,
+        created_at datetime(6) not null,
+        tenant_id bigint,
+        updated_at datetime(6) not null,
+        order_date datetime(6),
+        order_number varchar(255) not null,
+        status enum ('PENDING','PROCESSING','PAID','COMPLETED','CANCELLED','RETURNED') not null,
+        total_amount decimal(38,2) not null,
+        dealer_id bigint not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create table vehicle_orders (
+        id bigint not null auto_increment,
+        created_at datetime(6) not null,
+        tenant_id bigint,
+        updated_at datetime(6) not null,
+        order_date datetime(6),
+        order_number varchar(255) not null,
+        status enum ('PENDING','PROCESSING','PAID','COMPLETED','CANCELLED','RETURNED') not null,
+        total_amount decimal(38,2) not null,
+        dealer_id bigint not null,
+        primary key (id)
+    ) engine=InnoDB
+2026-03-31 02:52:41 - 
+    create index idx_order_item_order 
+       on order_items (order_id)
+Hibernate: 
+    create index idx_order_item_order 
+       on order_items (order_id)
+2026-03-31 02:52:41 - 
+    create index idx_order_item_vehicle 
+       on order_items (vehicle_id)
+Hibernate: 
+    create index idx_order_item_vehicle 
+       on order_items (vehicle_id)
+2026-03-31 02:52:41 - 
+    create index idx_order_item_tenant 
+       on order_items (tenant_id)
+Hibernate: 
+    create index idx_order_item_tenant 
+       on order_items (tenant_id)
+2026-03-31 02:52:41 - 
+    create index idx_order_dealer 
+       on vehicle_orders (dealer_id)
+Hibernate: 
+    create index idx_order_dealer 
+       on vehicle_orders (dealer_id)
+2026-03-31 02:52:41 - 
+    create index idx_order_status 
+       on vehicle_orders (status)
+Hibernate: 
+    create index idx_order_status 
+       on vehicle_orders (status)
+2026-03-31 02:52:41 - 
+    create index idx_order_tenant 
+       on vehicle_orders (tenant_id)
+Hibernate: 
+    create index idx_order_tenant 
+       on vehicle_orders (tenant_id)
+2026-03-31 02:52:41 - 
+    alter table vehicle_orders 
+       drop index UK_9q84rytvf7ppmipaslq6lj210
+Hibernate: 
+    alter table vehicle_orders 
+       drop index UK_9q84rytvf7ppmipaslq6lj210
+2026-03-31 02:52:41 - 
+    alter table vehicle_orders 
+       add constraint UK_9q84rytvf7ppmipaslq6lj210 unique (order_number)
+Hibernate: 
+    alter table vehicle_orders 
+       add constraint UK_9q84rytvf7ppmipaslq6lj210 unique (order_number)
+2026-03-31 02:52:41 - 
+    alter table order_items 
+       add constraint FKpwrjm3jjj3nrygejitsdpokta 
+       foreign key (order_id) 
+       references vehicle_orders (id)
+Hibernate: 
+    alter table order_items 
+       add constraint FKpwrjm3jjj3nrygejitsdpokta 
+       foreign key (order_id) 
+       references vehicle_orders (id)
+2026-03-31 02:52:42 - 
+    alter table order_items 
+       add constraint FK9un7bv0yifhn1hpkh5ioechp7 
+       foreign key (vehicle_id) 
+       references vehicles (id)
+Hibernate: 
+    alter table order_items 
+       add constraint FK9un7bv0yifhn1hpkh5ioechp7 
+       foreign key (vehicle_id) 
+       references vehicles (id)
+2026-03-31 02:52:42 - 
+    alter table vehicle_orders 
+       add constraint FKf658eijmlp3uex4ls3aqs5dft 
+       foreign key (dealer_id) 
+       references dealers (id)
+Hibernate: 
+    alter table vehicle_orders 
+       add constraint FKf658eijmlp3uex4ls3aqs5dft 
+       foreign key (dealer_id) 
+       references dealers (id)
+2026-03-31 02:52:42 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 02:52:43 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-31 02:52:45 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@16dbc731, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ca8d446, org.springframework.security.web.context.SecurityContextHolderFilter@66949b48, org.springframework.security.web.header.HeaderWriterFilter@7d028b1d, org.springframework.web.filter.CorsFilter@730632bb, org.springframework.security.web.authentication.logout.LogoutFilter@7f150691, com.inventoryapp.auth.security.filter.JwtAuthenticationFilter@7b3feb26, com.inventoryapp.common.tenant.TenantFilter@3c910acd, com.inventoryapp.common.ratelimiter.RateLimiterFilter@4780341, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59cda7a8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@446454af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a2b0708, org.springframework.security.web.session.SessionManagementFilter@42a3abe9, org.springframework.security.web.access.ExceptionTranslationFilter@6b02c3c4, org.springframework.security.web.access.intercept.AuthorizationFilter@16e98804]
+2026-03-31 02:52:46 - Tomcat started on port 51570 (http) with context path ''
+2026-03-31 02:52:46 - Started EnterpriseQATest in 14.389 seconds (process running for 16.475)
+2026-03-31 02:52:46 - Starting data initialization...
+2026-03-31 02:52:46 - 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-03-31 02:52:46 - 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-03-31 02:52:46 - 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-03-31 02:52:46 - 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-03-31 02:52:46 - 
+    select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role_id,
+        u1_0.tenant_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+        and u1_0.tenant_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role_id,
+        u1_0.tenant_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+        and u1_0.tenant_id=?
+2026-03-31 02:52:46 - Cleaning up old '0' tenant user
+2026-03-31 02:52:46 - 
+    select
+        t1_0.id,
+        t1_0.code,
+        t1_0.created_at,
+        t1_0.name,
+        t1_0.status 
+    from
+        tenants t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.code,
+        t1_0.created_at,
+        t1_0.name,
+        t1_0.status 
+    from
+        tenants t1_0 
+    where
+        t1_0.id=?
+2026-03-31 02:52:46 - Cleaning up old '0' tenant record
+2026-03-31 02:52:46 - 
+    delete 
+    from
+        users 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        id=?
+2026-03-31 02:52:46 - 
+    delete 
+    from
+        tenants 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        tenants 
+    where
+        id=?
+2026-03-31 02:52:46 - 
+    select
+        t1_0.id,
+        t1_0.code,
+        t1_0.created_at,
+        t1_0.name,
+        t1_0.status 
+    from
+        tenants t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.code,
+        t1_0.created_at,
+        t1_0.name,
+        t1_0.status 
+    from
+        tenants t1_0 
+    where
+        t1_0.id=?
+2026-03-31 02:52:46 - Seeding new tenant: System Tenant (ID: 0)
+2026-03-31 02:52:46 - 
+    select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role_id,
+        u1_0.tenant_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role_id,
+        u1_0.tenant_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-03-31 02:52:46 - 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-03-31 02:52:46 - 
+    insert 
+    into
+        users
+        (active, created_at, email, password, role_id, tenant_id, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, created_at, email, password, role_id, tenant_id, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-03-31 02:52:46 - Seeded global admin user: admin@system.com
+2026-03-31 02:52:46 - Data initialization completed.
+Starting Enterprise QA Exhaustive API End-to-End Suite...
+2026-03-31 02:52:47 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 02:52:47 - Initializing Servlet 'dispatcherServlet'
+2026-03-31 02:52:47 - Completed initialization in 0 ms
+2026-03-31 02:52:48 - Cache miss for REQUEST dispatch to '/api/auth/health' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-31 02:52:49 - Login request received for user: admin@system.com
+2026-03-31 02:52:49 - Login attempt for user: admin@system.com in tenant: null
+2026-03-31 02:52:49 - 
+    select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role_id,
+        u1_0.tenant_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role_id,
+        u1_0.tenant_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-03-31 02:52:49 - 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+2026-03-31 02:52:49 - Login successful for user: admin@system.com with role: GLOBAL_ADMIN
+2026-03-31 02:52:49 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:49 - Setting tenant focus: 0
+2026-03-31 02:52:49 - Setting tenant ID: 0
+2026-03-31 02:52:49 - Clearing tenant context
+2026-03-31 02:52:49 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:49 - Setting tenant focus: 0
+2026-03-31 02:52:49 - Setting tenant ID: 0
+2026-03-31 02:52:49 - 
+    select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role_id,
+        u1_0.tenant_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+        and u1_0.tenant_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role_id,
+        u1_0.tenant_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+        and u1_0.tenant_id=?
+2026-03-31 02:52:49 - 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+2026-03-31 02:52:49 - Clearing tenant context
+2026-03-31 02:52:49 - Registration request received for user: user_076b6@test.com
+2026-03-31 02:52:49 - Registration attempt for user: user_076b6@test.com in tenant: 12345
+2026-03-31 02:52:49 - 
+    select
+        d1_0.id 
+    from
+        dealers d1_0 
+    where
+        d1_0.tenant_id=? 
+    limit
+        ?
+Hibernate: 
+    select
+        d1_0.id 
+    from
+        dealers d1_0 
+    where
+        d1_0.tenant_id=? 
+    limit
+        ?
+2026-03-31 02:52:49 - 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+        and u1_0.tenant_id=? 
+    limit
+        ?
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+        and u1_0.tenant_id=? 
+    limit
+        ?
+2026-03-31 02:52:49 - 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-03-31 02:52:49 - 
+    insert 
+    into
+        users
+        (active, created_at, email, password, role_id, tenant_id, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, created_at, email, password, role_id, tenant_id, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-03-31 02:52:49 - User registered successfully: user_076b6@test.com with role: USER
+2026-03-31 02:52:49 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:49 - Setting tenant focus: 0
+2026-03-31 02:52:49 - Setting tenant ID: 0
+2026-03-31 02:52:49 - Creating dealer: QA Dealer db4d4f1e for tenant: 0
+2026-03-31 02:52:49 - 
+    insert 
+    into
+        dealers
+        (active, address, contact_person, created_at, email, name, phone_number, subscription_type, tenant_id, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        dealers
+        (active, address, contact_person, created_at, email, name, phone_number, subscription_type, tenant_id, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-31 02:52:49 - Dealer created: QA Dealer db4d4f1e for tenant: 0
+2026-03-31 02:52:49 - Clearing tenant context
+2026-03-31 02:52:49 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:49 - Setting tenant focus: 0
+2026-03-31 02:52:49 - Setting tenant ID: 0
+2026-03-31 02:52:49 - 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+2026-03-31 02:52:49 - Clearing tenant context
+2026-03-31 02:52:49 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:49 - Setting tenant focus: 0
+2026-03-31 02:52:49 - Setting tenant ID: 0
+2026-03-31 02:52:49 - 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+2026-03-31 02:52:49 - Dealer updated: 28 for tenant: 0
+2026-03-31 02:52:49 - 
+    update
+        dealers 
+    set
+        active=?,
+        address=?,
+        contact_person=?,
+        email=?,
+        name=?,
+        phone_number=?,
+        subscription_type=?,
+        updated_at=? 
+    where
+        id=?
+Hibernate: 
+    update
+        dealers 
+    set
+        active=?,
+        address=?,
+        contact_person=?,
+        email=?,
+        name=?,
+        phone_number=?,
+        subscription_type=?,
+        updated_at=? 
+    where
+        id=?
+2026-03-31 02:52:49 - Clearing tenant context
+2026-03-31 02:52:49 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:49 - Setting tenant focus: 0
+2026-03-31 02:52:49 - Setting tenant ID: 0
+2026-03-31 02:52:49 - 
+    select
+        count(d1_0.id) 
+    from
+        dealers d1_0 
+    where
+        d1_0.subscription_type=? 
+        and d1_0.active
+Hibernate: 
+    select
+        count(d1_0.id) 
+    from
+        dealers d1_0 
+    where
+        d1_0.subscription_type=? 
+        and d1_0.active
+2026-03-31 02:52:49 - 
+    select
+        count(d1_0.id) 
+    from
+        dealers d1_0 
+    where
+        d1_0.subscription_type=? 
+        and d1_0.active
+Hibernate: 
+    select
+        count(d1_0.id) 
+    from
+        dealers d1_0 
+    where
+        d1_0.subscription_type=? 
+        and d1_0.active
+2026-03-31 02:52:49 - 
+    select
+        count(d1_0.id) 
+    from
+        dealers d1_0 
+    where
+        d1_0.subscription_type=? 
+        and d1_0.active
+Hibernate: 
+    select
+        count(d1_0.id) 
+    from
+        dealers d1_0 
+    where
+        d1_0.subscription_type=? 
+        and d1_0.active
+2026-03-31 02:52:49 - Global subscription count: BASIC=19, PREMIUM=1, ENTERPRISE=0
+2026-03-31 02:52:49 - Admin requested global subscription counts
+2026-03-31 02:52:49 - Clearing tenant context
+2026-03-31 02:52:49 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:49 - Setting tenant focus: 0
+2026-03-31 02:52:49 - Setting tenant ID: 0
+2026-03-31 02:52:49 - 
+    select
+        count(*) 
+    from
+        dealers d1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        dealers d1_0
+2026-03-31 02:52:49 - 
+    select
+        count(d1_0.id) 
+    from
+        dealers d1_0 
+    where
+        d1_0.active
+Hibernate: 
+    select
+        count(d1_0.id) 
+    from
+        dealers d1_0 
+    where
+        d1_0.active
+2026-03-31 02:52:49 - Admin requested total dealers count: 28
+2026-03-31 02:52:49 - Clearing tenant context
+2026-03-31 02:52:49 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:49 - Setting tenant focus: 0
+2026-03-31 02:52:49 - Setting tenant ID: 0
+2026-03-31 02:52:49 - 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+2026-03-31 02:52:49 - 
+    insert 
+    into
+        vehicles
+        (available, created_at, dealer_id, description, manufacturer, model, price, status, tenant_id, updated_at, vin, year) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        vehicles
+        (available, created_at, dealer_id, description, manufacturer, model, price, status, tenant_id, updated_at, vin, year) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-31 02:52:49 - Vehicle created: X5 QA for tenant: 0
+2026-03-31 02:52:49 - New vehicle created: X5 QA for tenant: 0
+2026-03-31 02:52:49 - Clearing tenant context
+2026-03-31 02:52:49 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:49 - Setting tenant focus: 0
+2026-03-31 02:52:49 - Setting tenant ID: 0
+2026-03-31 02:52:49 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+2026-03-31 02:52:49 - Clearing tenant context
+2026-03-31 02:52:49 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:49 - Setting tenant focus: 0
+2026-03-31 02:52:49 - Setting tenant ID: 0
+2026-03-31 02:52:49 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+2026-03-31 02:52:49 - Vehicle updated: 18 for tenant: 0
+2026-03-31 02:52:49 - 
+    update
+        vehicles 
+    set
+        available=?,
+        dealer_id=?,
+        description=?,
+        manufacturer=?,
+        model=?,
+        price=?,
+        status=?,
+        updated_at=?,
+        vin=?,
+        year=? 
+    where
+        id=?
+Hibernate: 
+    update
+        vehicles 
+    set
+        available=?,
+        dealer_id=?,
+        description=?,
+        manufacturer=?,
+        model=?,
+        price=?,
+        status=?,
+        updated_at=?,
+        vin=?,
+        year=? 
+    where
+        id=?
+2026-03-31 02:52:49 - Vehicle fully replaced: 18 for tenant: 0
+2026-03-31 02:52:49 - Clearing tenant context
+2026-03-31 02:52:49 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:49 - Setting tenant focus: 0
+2026-03-31 02:52:49 - Setting tenant ID: 0
+2026-03-31 02:52:49 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.tenant_id=? 
+        and v1_0.available=1 
+        and (
+            ? is null 
+            or lower(v1_0.model) like lower(concat('%', cast(? as char), '%')) escape ''
+        ) 
+        and (
+            ? is null 
+            or v1_0.status=?
+        ) 
+        and (
+            ? is null 
+            or v1_0.price>=?
+        ) 
+        and (
+            ? is null 
+            or v1_0.price<=?
+        )
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.tenant_id=? 
+        and v1_0.available=1 
+        and (
+            ? is null 
+            or lower(v1_0.model) like lower(concat('%', cast(? as char), '%')) escape ''
+        ) 
+        and (
+            ? is null 
+            or v1_0.status=?
+        ) 
+        and (
+            ? is null 
+            or v1_0.price>=?
+        ) 
+        and (
+            ? is null 
+            or v1_0.price<=?
+        )
+2026-03-31 02:52:49 - Clearing tenant context
+2026-03-31 02:52:49 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:49 - Setting tenant focus: 0
+2026-03-31 02:52:49 - Setting tenant ID: 0
+2026-03-31 02:52:49 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.tenant_id=? 
+        and v1_0.available=1 
+        and (
+            ? is null 
+            or lower(v1_0.model) like lower(concat('%', cast(? as char), '%')) escape ''
+        ) 
+        and (
+            ? is null 
+            or v1_0.status=?
+        ) 
+        and (
+            ? is null 
+            or v1_0.price>=?
+        ) 
+        and (
+            ? is null 
+            or v1_0.price<=?
+        )
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.tenant_id=? 
+        and v1_0.available=1 
+        and (
+            ? is null 
+            or lower(v1_0.model) like lower(concat('%', cast(? as char), '%')) escape ''
+        ) 
+        and (
+            ? is null 
+            or v1_0.status=?
+        ) 
+        and (
+            ? is null 
+            or v1_0.price>=?
+        ) 
+        and (
+            ? is null 
+            or v1_0.price<=?
+        )
+2026-03-31 02:52:49 - Clearing tenant context
+2026-03-31 02:52:49 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:49 - Setting tenant focus: 0
+2026-03-31 02:52:49 - Setting tenant ID: 0
+2026-03-31 02:52:49 - Updating stock for vehicle 18 at dealer 28 in tenant 0
+2026-03-31 02:52:49 - 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.dealer_id,
+        i1_0.last_updated,
+        i1_0.quantity,
+        i1_0.tenant_id,
+        i1_0.updated_at,
+        i1_0.vehicle_id 
+    from
+        inventory i1_0 
+    where
+        i1_0.vehicle_id=? 
+        and i1_0.dealer_id=? 
+        and i1_0.tenant_id=?
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.dealer_id,
+        i1_0.last_updated,
+        i1_0.quantity,
+        i1_0.tenant_id,
+        i1_0.updated_at,
+        i1_0.vehicle_id 
+    from
+        inventory i1_0 
+    where
+        i1_0.vehicle_id=? 
+        and i1_0.dealer_id=? 
+        and i1_0.tenant_id=?
+2026-03-31 02:52:49 - 
+    insert 
+    into
+        inventory
+        (created_at, dealer_id, last_updated, quantity, tenant_id, updated_at, vehicle_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventory
+        (created_at, dealer_id, last_updated, quantity, tenant_id, updated_at, vehicle_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-03-31 02:52:49 - Clearing tenant context
+2026-03-31 02:52:49 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:49 - Setting tenant focus: 0
+2026-03-31 02:52:49 - Setting tenant ID: 0
+2026-03-31 02:52:49 - 
+    select
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.dealer_id,
+        i1_0.last_updated,
+        i1_0.quantity,
+        i1_0.tenant_id,
+        i1_0.updated_at,
+        i1_0.vehicle_id 
+    from
+        inventory i1_0 
+    where
+        i1_0.tenant_id=?
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.dealer_id,
+        i1_0.last_updated,
+        i1_0.quantity,
+        i1_0.tenant_id,
+        i1_0.updated_at,
+        i1_0.vehicle_id 
+    from
+        inventory i1_0 
+    where
+        i1_0.tenant_id=?
+2026-03-31 02:52:49 - 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+2026-03-31 02:52:49 - Clearing tenant context
+2026-03-31 02:52:49 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:49 - Setting tenant focus: 0
+2026-03-31 02:52:49 - Setting tenant ID: 0
+2026-03-31 02:52:49 - 
+    select
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.dealer_id,
+        i1_0.last_updated,
+        i1_0.quantity,
+        i1_0.tenant_id,
+        i1_0.updated_at,
+        i1_0.vehicle_id 
+    from
+        inventory i1_0 
+    where
+        i1_0.dealer_id=? 
+        and i1_0.tenant_id=?
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.dealer_id,
+        i1_0.last_updated,
+        i1_0.quantity,
+        i1_0.tenant_id,
+        i1_0.updated_at,
+        i1_0.vehicle_id 
+    from
+        inventory i1_0 
+    where
+        i1_0.dealer_id=? 
+        and i1_0.tenant_id=?
+2026-03-31 02:52:49 - 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+2026-03-31 02:52:49 - Clearing tenant context
+2026-03-31 02:52:49 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:49 - Setting tenant focus: 0
+2026-03-31 02:52:49 - Setting tenant ID: 0
+2026-03-31 02:52:49 - Creating order for dealer 28 in tenant 0
+2026-03-31 02:52:49 - 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+2026-03-31 02:52:49 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+2026-03-31 02:52:49 - 
+    insert 
+    into
+        vehicle_orders
+        (created_at, dealer_id, order_date, order_number, status, tenant_id, total_amount, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        vehicle_orders
+        (created_at, dealer_id, order_date, order_number, status, tenant_id, total_amount, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-31 02:52:49 - 
+    insert 
+    into
+        order_items
+        (created_at, order_id, quantity, sub_total, tenant_id, unit_price, updated_at, vehicle_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        order_items
+        (created_at, order_id, quantity, sub_total, tenant_id, unit_price, updated_at, vehicle_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-31 02:52:50 - Clearing tenant context
+2026-03-31 02:52:50 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:50 - Setting tenant focus: 0
+2026-03-31 02:52:50 - Setting tenant ID: 0
+2026-03-31 02:52:50 - 
+    select
+        vo1_0.id,
+        vo1_0.created_at,
+        vo1_0.dealer_id,
+        vo1_0.order_date,
+        vo1_0.order_number,
+        vo1_0.status,
+        vo1_0.tenant_id,
+        vo1_0.total_amount,
+        vo1_0.updated_at 
+    from
+        vehicle_orders vo1_0 
+    where
+        vo1_0.id=?
+Hibernate: 
+    select
+        vo1_0.id,
+        vo1_0.created_at,
+        vo1_0.dealer_id,
+        vo1_0.order_date,
+        vo1_0.order_number,
+        vo1_0.status,
+        vo1_0.tenant_id,
+        vo1_0.total_amount,
+        vo1_0.updated_at 
+    from
+        vehicle_orders vo1_0 
+    where
+        vo1_0.id=?
+2026-03-31 02:52:50 - 
+    select
+        i1_0.order_id,
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.quantity,
+        i1_0.sub_total,
+        i1_0.tenant_id,
+        i1_0.unit_price,
+        i1_0.updated_at,
+        i1_0.vehicle_id 
+    from
+        order_items i1_0 
+    where
+        i1_0.order_id=?
+Hibernate: 
+    select
+        i1_0.order_id,
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.quantity,
+        i1_0.sub_total,
+        i1_0.tenant_id,
+        i1_0.unit_price,
+        i1_0.updated_at,
+        i1_0.vehicle_id 
+    from
+        order_items i1_0 
+    where
+        i1_0.order_id=?
+2026-03-31 02:52:50 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+2026-03-31 02:52:50 - Clearing tenant context
+2026-03-31 02:52:50 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:50 - Setting tenant focus: 0
+2026-03-31 02:52:50 - Setting tenant ID: 0
+2026-03-31 02:52:50 - 
+    select
+        vo1_0.id,
+        vo1_0.created_at,
+        vo1_0.dealer_id,
+        vo1_0.order_date,
+        vo1_0.order_number,
+        vo1_0.status,
+        vo1_0.tenant_id,
+        vo1_0.total_amount,
+        vo1_0.updated_at 
+    from
+        vehicle_orders vo1_0
+Hibernate: 
+    select
+        vo1_0.id,
+        vo1_0.created_at,
+        vo1_0.dealer_id,
+        vo1_0.order_date,
+        vo1_0.order_number,
+        vo1_0.status,
+        vo1_0.tenant_id,
+        vo1_0.total_amount,
+        vo1_0.updated_at 
+    from
+        vehicle_orders vo1_0
+2026-03-31 02:52:50 - 
+    select
+        i1_0.order_id,
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.quantity,
+        i1_0.sub_total,
+        i1_0.tenant_id,
+        i1_0.unit_price,
+        i1_0.updated_at,
+        i1_0.vehicle_id 
+    from
+        order_items i1_0 
+    where
+        i1_0.order_id=?
+Hibernate: 
+    select
+        i1_0.order_id,
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.quantity,
+        i1_0.sub_total,
+        i1_0.tenant_id,
+        i1_0.unit_price,
+        i1_0.updated_at,
+        i1_0.vehicle_id 
+    from
+        order_items i1_0 
+    where
+        i1_0.order_id=?
+2026-03-31 02:52:50 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+2026-03-31 02:52:50 - Clearing tenant context
+2026-03-31 02:52:50 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:50 - Setting tenant focus: 0
+2026-03-31 02:52:50 - Setting tenant ID: 0
+2026-03-31 02:52:50 - 
+    select
+        vo1_0.id,
+        vo1_0.created_at,
+        vo1_0.dealer_id,
+        vo1_0.order_date,
+        vo1_0.order_number,
+        vo1_0.status,
+        vo1_0.tenant_id,
+        vo1_0.total_amount,
+        vo1_0.updated_at 
+    from
+        vehicle_orders vo1_0 
+    where
+        vo1_0.id=?
+Hibernate: 
+    select
+        vo1_0.id,
+        vo1_0.created_at,
+        vo1_0.dealer_id,
+        vo1_0.order_date,
+        vo1_0.order_number,
+        vo1_0.status,
+        vo1_0.tenant_id,
+        vo1_0.total_amount,
+        vo1_0.updated_at 
+    from
+        vehicle_orders vo1_0 
+    where
+        vo1_0.id=?
+2026-03-31 02:52:50 - 
+    select
+        i1_0.order_id,
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.quantity,
+        i1_0.sub_total,
+        i1_0.tenant_id,
+        i1_0.unit_price,
+        i1_0.updated_at,
+        i1_0.vehicle_id 
+    from
+        order_items i1_0 
+    where
+        i1_0.order_id=?
+Hibernate: 
+    select
+        i1_0.order_id,
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.quantity,
+        i1_0.sub_total,
+        i1_0.tenant_id,
+        i1_0.unit_price,
+        i1_0.updated_at,
+        i1_0.vehicle_id 
+    from
+        order_items i1_0 
+    where
+        i1_0.order_id=?
+2026-03-31 02:52:50 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+2026-03-31 02:52:50 - 
+    update
+        vehicle_orders 
+    set
+        dealer_id=?,
+        order_date=?,
+        order_number=?,
+        status=?,
+        total_amount=?,
+        updated_at=? 
+    where
+        id=?
+Hibernate: 
+    update
+        vehicle_orders 
+    set
+        dealer_id=?,
+        order_date=?,
+        order_number=?,
+        status=?,
+        total_amount=?,
+        updated_at=? 
+    where
+        id=?
+2026-03-31 02:52:50 - Clearing tenant context
+2026-03-31 02:52:50 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:50 - Setting tenant focus: 0
+2026-03-31 02:52:50 - Setting tenant ID: 0
+2026-03-31 02:52:50 - 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.available,
+        v1_0.created_at,
+        v1_0.dealer_id,
+        v1_0.description,
+        v1_0.manufacturer,
+        v1_0.model,
+        v1_0.price,
+        v1_0.status,
+        v1_0.tenant_id,
+        v1_0.updated_at,
+        v1_0.vin,
+        v1_0.year 
+    from
+        vehicles v1_0 
+    where
+        v1_0.id=?
+2026-03-31 02:52:50 - Vehicle deleted: 18 for tenant: 0
+2026-03-31 02:52:50 - 
+    update
+        vehicles 
+    set
+        available=?,
+        dealer_id=?,
+        description=?,
+        manufacturer=?,
+        model=?,
+        price=?,
+        status=?,
+        updated_at=?,
+        vin=?,
+        year=? 
+    where
+        id=?
+Hibernate: 
+    update
+        vehicles 
+    set
+        available=?,
+        dealer_id=?,
+        description=?,
+        manufacturer=?,
+        model=?,
+        price=?,
+        status=?,
+        updated_at=?,
+        vin=?,
+        year=? 
+    where
+        id=?
+2026-03-31 02:52:50 - Vehicle deleted: 18 for tenant: 0
+2026-03-31 02:52:50 - Clearing tenant context
+2026-03-31 02:52:50 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:50 - Setting tenant focus: 0
+2026-03-31 02:52:50 - Setting tenant ID: 0
+2026-03-31 02:52:50 - 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+2026-03-31 02:52:50 - Dealer deleted: 28 for tenant: 0
+2026-03-31 02:52:50 - 
+    update
+        dealers 
+    set
+        active=?,
+        address=?,
+        contact_person=?,
+        email=?,
+        name=?,
+        phone_number=?,
+        subscription_type=?,
+        updated_at=? 
+    where
+        id=?
+Hibernate: 
+    update
+        dealers 
+    set
+        active=?,
+        address=?,
+        contact_person=?,
+        email=?,
+        name=?,
+        phone_number=?,
+        subscription_type=?,
+        updated_at=? 
+    where
+        id=?
+2026-03-31 02:52:50 - Dealer deleted: 28 for tenant: 0
+2026-03-31 02:52:50 - Clearing tenant context
+2026-03-31 02:52:50 - JWT auth OK: user=admin@system.com tenant=0 role=GLOBAL_ADMIN
+2026-03-31 02:52:50 - Setting tenant focus: 0
+2026-03-31 02:52:50 - Setting tenant ID: 0
+2026-03-31 02:52:50 - 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.active,
+        d1_0.address,
+        d1_0.contact_person,
+        d1_0.created_at,
+        d1_0.email,
+        d1_0.name,
+        d1_0.phone_number,
+        d1_0.subscription_type,
+        d1_0.tenant_id,
+        d1_0.updated_at 
+    from
+        dealers d1_0 
+    where
+        d1_0.id=?
+2026-03-31 02:52:50 - Resource not found: Dealer not found at /api/dealers/99999
+2026-03-31 02:52:50 - Clearing tenant context
+2026-03-31 02:52:50 - Unauthorized request: Missing tenant identity from JWT for /api/admin/users
+✅ QA Execution Complete! Summaries logged to qa-response/
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (E:\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+</testsuite>

@@ -1,0 +1,121 @@
+spring:
+  application:
+    name: inventory-management-system
+  
+  # Database Configuration (MySQL)
+  datasource:
+    url: jdbc:mysql://localhost:3306/inventory_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+      connection-timeout: 30000
+  # SQL Initialization
+  sql:
+    init:
+      mode: always
+  
+  # JPA Configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+    open-in-view: false
+  
+  # Jackson Configuration
+  jackson:
+    default-property-inclusion: non_null
+    serialization:
+      write-dates-as-timestamps: false
+  
+  # Redis Configuration
+  data:
+    redis:
+      enabled: true
+      host: localhost
+      port: 6379
+      timeout: 60000
+      jedis:
+        pool:
+          max-active: 8
+          max-wait: -1ms
+          max-idle: 8
+          min-idle: 0
+  
+  # Cache Configuration
+  cache:
+    type: none
+
+# Server Configuration
+server:
+  port: 8080
+  error:
+    include-message: always
+    include-binding-errors: always
+
+# Logging Configuration
+logging:
+  level:
+    root: INFO
+    com.inventoryapp: DEBUG
+    org.hibernate.SQL: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
+# SpringDoc OpenAPI
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+
+# Encryption Configuration (AES/GCM 128-bit)
+aes:
+  encryption:
+    key: ${ENCRYPTION_KEY:Y2hhbmdlbWUxMjM0NTY3OA==}
+
+# JWT Configuration
+jwt:
+  secret: mySecretKeyForJWTTokenGenerationAndValidation12345
+  expiration: 86400000  # 24 hours in milliseconds
+
+# Rate Limiting Configuration
+rate-limiting:
+  enabled: true
+  requests-per-minute: 60
+  per-tenant: true
+  per-user: true
+
+# Application Configuration
+app:
+  # Default Admin Configuration
+  # ⚠️ SECURITY WARNING: Change these values in production!
+  # Default credentials should NEVER be used in a production environment
+  admin:
+    default-username: admin
+    default-password: ChangeMe@123
+    default-tenant: 0
+  
+  # Multi-Tenancy Configuration
+  multi-tenancy:
+    enabled: true
+    header-name: X-Tenant-Id
+  
+  # Security Configuration
+  security:
+    jwt:
+      header: Authorization
+      prefix: Bearer
+    cors:
+      allowed-origins: "*"
+      allowed-methods: GET,POST,PUT,DELETE,OPTIONS
+      allowed-headers: "*"
+      max-age: 3600
+

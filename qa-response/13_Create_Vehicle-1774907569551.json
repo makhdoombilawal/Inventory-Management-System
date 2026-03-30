@@ -1,0 +1,1 @@
+{"status":"success","message":"Vehicle created successfully","data":{"id":18,"model":"X5 QA","manufacturer":"BMW","year":"2024","price":70000,"status":"AVAILABLE","vin":"VINdb4d4f1e","available":true,"dealerId":28,"tenantId":0,"createdAt":"2026-03-31T02:52:49.518985","updatedAt":"2026-03-31T02:52:49.518985"},"timestamp":"2026-03-31T02:52:49.5382879"}
