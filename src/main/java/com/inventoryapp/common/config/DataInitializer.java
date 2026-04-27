@@ -106,7 +106,6 @@ public class DataInitializer implements CommandLineRunner {
         }
     }
 
-    @SuppressWarnings("null")
     private void cleanupOldSystemTenant() {
         Optional<User> oldSystemAdmin = userRepository.findByEmailAndTenantId("admin@system.com", 0L);
         if (oldSystemAdmin.isPresent()) {
