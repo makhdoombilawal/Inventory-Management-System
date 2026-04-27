@@ -1,0 +1,1 @@
+{"status":"success","message":"Subscription counts retrieved successfully","data":{"ENTERPRISE":{"subscriptionType":"ENTERPRISE","count":0},"PREMIUM":{"subscriptionType":"PREMIUM","count":1},"BASIC":{"subscriptionType":"BASIC","count":19}},"timestamp":"2026-04-27T20:53:47.0590265"}

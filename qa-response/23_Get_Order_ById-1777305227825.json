@@ -1,0 +1,1 @@
+{"status":"success","message":"Order details retrieved","data":{"id":2,"orderNumber":"ORD-F12EDE80","dealerId":29,"status":"PENDING","totalAmount":75000.00,"orderDate":"2026-04-27T20:53:47.684109","tenantId":0,"items":[{"id":2,"vehicleId":19,"vehicleModel":"X6 QA","quantity":1,"unitPrice":75000.00,"subTotal":75000.00}]},"timestamp":"2026-04-27T20:53:47.8254541"}
