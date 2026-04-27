@@ -100,7 +100,16 @@ public class DealerController {
      * Extract tenant ID from AuthUser principal in security context (JWT-based)
      */
     private Long getTenantIdFromContext() {
-        AuthUser authUser = (AuthUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        return authUser.getTenantId();
+        try {
+            var authentication = SecurityContextHolder.getContext().getAuthentication();
+            if (authentication != null && authentication.getPrincipal() instanceof AuthUser) {
+                AuthUser authUser = (AuthUser) authentication.getPrincipal();
+                return authUser.getTenantId();
+            }
+            throw new IllegalStateException("Tenant context not available");
+        } catch (Exception e) {
+            log.error("Failed to get tenant from context: {}", e.getMessage());
+            throw new IllegalStateException("Tenant context not available", e);
+        }
     }
 }

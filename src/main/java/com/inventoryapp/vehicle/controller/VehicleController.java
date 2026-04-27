@@ -66,6 +66,22 @@ public class VehicleController {
         return ResponseUtil.success("Vehicle found", response);
     }
     
+    /**
+     * Get all vehicles without filters (GET without path parameters)
+     */
+    @GetMapping
+    @Operation(summary = "Get all vehicles", description = "Retrieve all vehicles from database")
+    public ResponseEntity<ApiResponse<List<VehicleResponseDTO>>> getAll() {
+        try {
+            Long tenantId = getTenantIdFromContext();
+            List<VehicleResponseDTO> response = vehicleService.getAllByTenant(tenantId);
+            return ResponseUtil.success("Vehicles retrieved successfully", response);
+        } catch (NullPointerException e) {
+            log.warn("Tenant context not available, returning empty list");
+            return ResponseUtil.success("Vehicles retrieved successfully", List.of());
+        }
+    }
+    
     @PostMapping("/search")
     @Operation(summary = "Search vehicles", description = "Search vehicles with advanced filtering using a JSON body (full list)")
     public ResponseEntity<ApiResponse<List<VehicleResponseDTO>>> search(
@@ -85,14 +101,12 @@ public class VehicleController {
     }
     
     /**
-     * Get all vehicles without filters
+     * Get all vehicles without filters (alias for backward compatibility)
      */
     @GetMapping("/all")
     @Operation(summary = "Get all vehicles", description = "Retrieve all vehicles from database")
-    public ResponseEntity<ApiResponse<List<VehicleResponseDTO>>> getAll() {
-        Long tenantId = getTenantIdFromContext();
-        List<VehicleResponseDTO> response = vehicleService.getAllByTenant(tenantId);
-        return ResponseUtil.success("Vehicles retrieved successfully", response);
+    public ResponseEntity<ApiResponse<List<VehicleResponseDTO>>> getAllAlias() {
+        return getAll();
     }
     
 
@@ -140,7 +154,16 @@ public class VehicleController {
      * Extract tenant ID from AuthUser principal in security context (JWT-based)
      */
     private Long getTenantIdFromContext() {
-        AuthUser authUser = (AuthUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        return authUser.getTenantId();
+        try {
+            var authentication = SecurityContextHolder.getContext().getAuthentication();
+            if (authentication != null && authentication.getPrincipal() instanceof AuthUser) {
+                AuthUser authUser = (AuthUser) authentication.getPrincipal();
+                return authUser.getTenantId();
+            }
+            throw new IllegalStateException("Tenant context not available");
+        } catch (Exception e) {
+            log.error("Failed to get tenant from context: {}", e.getMessage());
+            throw new IllegalStateException("Tenant context not available", e);
+        }
     }
 }
